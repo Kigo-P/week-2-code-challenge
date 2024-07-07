@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Shopping List</title>
 </head>
 <body>
+    <!-- Creating a heading for our shopping list -->
+    <h1>Shopping List</h1>
+    <!-- Creating a label, input field and buttons -->
+    <label for="input">Name of item:</label> 
+    <input type="text" id="input" name="input" placeholder="number/text">
+    <button id="button">Add</button><br>
     
+    <!-- creating a table which will be used to store the data the user inputs in the input field above -->
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Item Number</strong></th>
+                <th><strong>Mark purchased</strong></th>
+                <th><strong>Clear</strong></th>
+            </tr>
+        </thead>
+        <tbody id="tbody">  
+    
+
+        </tbody>
+    </table>
+    <button id="clearItems">Reset</button>
+    <script src="./index.js"></script>
 </body>
 </html>
